@@ -25,7 +25,7 @@ const OrdersList = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {orders.map((order)=>{
+                    {orders?.map((order)=>{
                         const id = order._id;
                         const {name,address,numItemsInCart,orderTotal,createdAt} = order;
                         const date = day(createdAt).format('hh:mm a - MMM Do, YYYY')

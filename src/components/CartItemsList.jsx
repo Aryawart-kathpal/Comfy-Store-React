@@ -6,7 +6,7 @@ const CartItemsList = () => {
     console.log(cartItems);
   return (
     <>
-        {cartItems.map((item)=>{
+        {cartItems?.map((item)=>{
             return <CartItem key={item.cartID} cartItem={item}/>
         })}
     </>

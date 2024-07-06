@@ -7,7 +7,7 @@ const ProductsGrid = () => {
     // console.log(products);
   return (
     <div className="pt-12 gap-4 grid md:grid-cols-2 lg:grid-cols-3">
-        {products.map((product)=>{
+        {products?.map((product)=>{
             const {title,price,image} = product;
             const dollarsAmount= formatPrice(price);
             return(

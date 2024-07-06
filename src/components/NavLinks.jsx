@@ -13,7 +13,7 @@ const NavLinks = () => {
   const user = useSelector((state)=>state.userState.user);
   return (
     <>
-        {links.map((link)=>{
+        {links?.map((link)=>{
             const {id,url,text} =link;
             if((url==='checkout' || url === 'orders') && !user) return null;
             return <li key={id}>

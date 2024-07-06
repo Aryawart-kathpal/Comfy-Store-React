@@ -7,7 +7,7 @@ const ProductsList = () => {
     // console.log(products);
   return (
     <div className="mt-12 grid gap-y-8">
-        {products.map((product)=>{
+        {products?.map((product)=>{
             const {title,price,image,company} = product;
             const dollarsAmount= formatPrice(price);
             return(
